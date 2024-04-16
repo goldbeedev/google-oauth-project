@@ -10,7 +10,7 @@ export class GoogleStrategy extends PassportStrategy(Strategy, 'google') {
       clientSecret: process.env.CLIENT_SECRET,
       callbackURL: process.env.CALLBACK_URL,
       passReqToCallback: true,
-      scope: ['email', 'profile', 'openid']
+      scope: ['email', 'profile', 'openid', 'https://www.googleapis.com/auth/drive']
     });
   }
 
