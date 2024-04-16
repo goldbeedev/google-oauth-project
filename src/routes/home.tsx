@@ -1,5 +1,6 @@
+import { Container } from "@mui/material";
 import StyledLoginButton from "../components/button";
-
+import tw from 'twin.macro';
 
 
 
@@ -9,8 +10,8 @@ export const Home = () => {
         window.location.href = 'http://localhost:3001/auth/google';
     };
     return (
-        <div>
+        <Container maxWidth="sm">
             <StyledLoginButton onClick={handleGoogleAuthClick}/>
-        </div>
+        </Container>
       );
 }

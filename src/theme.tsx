@@ -12,58 +12,14 @@ const theme = createTheme({
     },
   },
   components: {
-    MuiTextField: {
+    MuiContainer: {
       styleOverrides: {
         root: {
-          ...tw`text-primary text-2xl border-primary`,
-          '& .MuiOutlinedInput-input': {
-            ...tw`text-primary border-primary`
-          },
-          '& .MuiOutlinedInput-notchedOutline': {
-            ...tw`border-primary`
-          },
-          '& .MuiFormLabel-root': {
-            ...tw`text-primary`
-          },
-          [`&:hover .MuiFormLabel-root`]: {
-            ...tw`text-secondary`
-          },
-        }
-      }
-    },
-    MuiOutlinedInput: {
-      styleOverrides: {
-        root: {
-          [`.MuiSelect-icon`]: {
-            ...tw`text-primary`
-          },
-          [`.${outlinedInputClasses.notchedOutline}`]: {
-            ...tw`border-primary`
-          },
-          [`&:hover .${outlinedInputClasses.notchedOutline}`]: {
-            ...tw`border-secondary text-secondary`
-          },
-          [`&.Mui-focused .${outlinedInputClasses.notchedOutline}`]: {
-            ...tw`border-secondary`
-          },
-        },
-      },
-    },
-    MuiFormLabel: {
-      styleOverrides: {
-        root: {
-          ...tw`text-primary`
-        }
-      }
-    },
-    MuiSvgIcon: {
-      styleOverrides: {
-        root: {
-          ...tw`text-primary`
-        }
+          ...tw`flex flex-row flex-wrap m-auto h-screen items-center justify-center`,
       }
     },
   },
+}
 });
 
 export default theme;

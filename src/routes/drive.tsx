@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import StyledTable from "../components/table";
+import tw from 'twin.macro'
 
 export const Drive = () => {
     const [files, setFiles] = useState(null)
@@ -10,8 +11,7 @@ export const Drive = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('http://localhost:3001/drive')
-                console.log(response.data, 'drive response')
-                setFiles(response.data)
+                setFiles(response.data.files)
             } catch (error: any) {
                 setError(error)
             } finally {
@@ -29,7 +29,7 @@ export const Drive = () => {
         return <div>Error: {error.message}</div>
     }
     return (
-        <div>
+        <div tw='flex items-center justify-center'>
             {files && <StyledTable data={files}/>}
         </div>
       );
