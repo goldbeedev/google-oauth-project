@@ -25,7 +25,6 @@ async listFiles(): Promise<any> {
       });
       
       const files = response.data.files;
-      console.log(files, 'files')
       return files;
     } catch (error) {
       console.error('Error listing files:', error);
