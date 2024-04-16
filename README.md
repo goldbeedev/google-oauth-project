@@ -42,7 +42,7 @@ In the project "backend" directory, you can run:
 Runs the NestJS app in the development mode.\
 On Port [http://localhost:3001](http://localhost:3001)
 
-> **Note:** You need to open this app in separate terminals if you want to run the FE and BE simultaneously.
+> **Note:** You need to open this app in two separate terminals if you want to run the FE and BE simultaneously.
 
 ### `npm run test`
 
