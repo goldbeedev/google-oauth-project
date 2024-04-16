@@ -21,7 +21,7 @@ async listFiles(): Promise<any> {
     try {
       const response = await drive.files.list({
         pageSize: 10,
-        fields: 'nextPageToken, files(id, name)',
+        fields: 'nextPageToken, files(id, name, mimeType, createdTime, modifiedTime, webViewLink)',
       });
       
       const files = response.data.files;
