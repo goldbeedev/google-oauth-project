@@ -36,13 +36,13 @@ You will also see any lint errors in the console.
 
 In the project "backend" directory, you can run:
 
-### `npm run start`
+### `npm start`
 
 Runs the NestJS app in the development mode.\
 On Port [http://localhost:3001](http://localhost:3001)
 
 > **Note:** You need to open this app in two separate terminals if you want to run the FE and BE simultaneously.
 
-### `npm run test`
+### `npm test`
 
 Runs unit tests.
