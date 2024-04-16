@@ -1,12 +1,12 @@
 # Getting Started with developer-test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-The backend was built via NestJS 
-
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The backend was built via NestJS 
 
 From the root directory
 
